@@ -9,7 +9,6 @@ async function frases() {
 
     const res = await fetch('frases.json');
     const dados = await res.json();
-    let contador = 0;
     const frasesRandom = dados.sort(() => 0.5 - Math.random())
 
     frasesRandom.map(frase => {

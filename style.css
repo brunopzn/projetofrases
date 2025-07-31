@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #DBF227;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    padding: 10rem;
+    z-index: 1;
+}
+
+.gerar {
+    background-color: #0D0D0D;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 800;
+    position: absolute;
+    top: 4rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.gerar:hover {
+    background-color: #BF5D54;
+}
+
+.box {
+
+    width: 300px;
+    height: auto;
+    background-color: #0D0D0D;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: 0.5s;
+}
+
+.box:hover{
+    background-color: #BF5D54;
+}
+
+.box::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: 4rem;
+    left: 4.5rem;
+
+}
+
+.box::before {
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 4rem;
+    left: 4.5rem;
+
+}
+
+
+.textContent h3 {
+    padding: 5rem;
+    text-align: center;
+}
+
+.btn {
+    padding: 5rem;
+}
